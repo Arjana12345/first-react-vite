@@ -2,10 +2,13 @@ import React from 'react'
 import Card from './components/card'
 
 const App = () => {
-	
+	const user = "Hello Arjana"
+	const designation = "Software & Engineer"
+
+	const userData = {"user":user,"designation":designation};
   return (
 	<div>
-		<Card/>
+		<Card userDetails={userData}/>
 	</div>
    	
   )
