@@ -12,6 +12,7 @@ const card = (props) => {
                 <div className="card" key={idx}>
                     <h4><b>{userOne.user}</b></h4>
                     <p>{userOne.designation}</p>
+                    <button>Remove</button>
                 </div>
                 )
             )
