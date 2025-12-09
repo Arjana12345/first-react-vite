@@ -2,11 +2,11 @@ import React from 'react'
 import Card from './components/card'
 
 const App = () => {
-	const user = "Hello Arjana"
+	const user = "Arjana"
 	const designation = "Software & Engineer"
 
-	const userData = [	{"user":user,"designation":designation},
-						{"user":"Kartik","designation":"Front end developer"}
+	const userData = [	{"id":"1", "user":user,"designation":designation},
+						{"id": "2", "user":"Kartik","designation":"Front end developer"}
 					];
   return (
 	<div>

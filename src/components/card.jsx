@@ -5,6 +5,11 @@ const card = (props) => {
     console.log(props.userDetails)
     const userDetails = props.userDetails
 
+    const handleClick = (id) => {
+        console.log("called handleClicked");
+        console.log(id);
+    }
+
   return (
     <div>
         {
@@ -12,7 +17,7 @@ const card = (props) => {
                 <div className="card" key={idx}>
                     <h4><b>{userOne.user}</b></h4>
                     <p>{userOne.designation}</p>
-                    <button>Remove</button>
+                    <button onClick={handleClick(userOne.id)}>Remove</button>
                 </div>
                 )
             )
