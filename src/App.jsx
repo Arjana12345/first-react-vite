@@ -1,5 +1,7 @@
 import React from 'react'
 import Card from './components/card'
+import Mybutton from './components/mybutton'
+
 
 const App = () => {
 	const user = "Arjana"
@@ -11,6 +13,7 @@ const App = () => {
   return (
 	<div>
 		<Card userDetails={userData}/>
+		<Mybutton />
 	</div>
    	
   )

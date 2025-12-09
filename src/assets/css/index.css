@@ -73,4 +73,13 @@ button:focus-visible {
   margin: 20px;
   padding: 20px;
 }
+.my-button {
+  background-color: green;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
