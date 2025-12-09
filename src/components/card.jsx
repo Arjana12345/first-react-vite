@@ -7,8 +7,10 @@ const card = () => {
 
   return (
     <div>
-		<h4><b>{user}</b></h4>
-		<p>{designation}</p>
+		<div className="card">
+            <h4><b>{user}</b></h4>
+            <p>{designation}</p>
+        </div>
 	</div>
   )
 }
