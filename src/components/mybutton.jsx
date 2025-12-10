@@ -13,7 +13,9 @@ const mybutton = (props) => {
     const [user, setUser] = useState({"id": "1", "name": "Suniti","address": "JBP"})
 
     const updateUser = () => {
-        setUser(prev =>({...prev, address:"Raipur"}))
+        setUser(prev =>({...prev, 
+                        address:"Raipur"})
+                    )
         console.log(user);
     }
 
