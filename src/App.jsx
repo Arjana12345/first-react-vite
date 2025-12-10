@@ -1,9 +1,11 @@
 import React from 'react'
+import {Route, Routes} from 'react-router-dom'
 import Card from './components/card'
 import Mybutton from './components/mybutton'
 import MyForm from './components/MyForm'
 import Storage from './components/Storage'
 import ApiCalling from './components/ApiCalling'
+import ExtraThing from './components/ExtraThing'
 
 
 const App = () => {
@@ -15,11 +17,17 @@ const App = () => {
 					];
   return (
 	<div>
-		{/* <Card userDetails={userData}/>
-		<Mybutton />
-		<MyForm />
-		<Storage /> */}
-		<ApiCalling />
+		<Routes>
+			<Route path= '/' element={<Card userDetails={userData} />}/>
+			<Route path='/button' element={<Mybutton />} />
+			<Route path='/form' element={<MyForm />} />
+			<Route path='/localstorage' element={<Storage />} />
+			<Route path='/apicalling' element={<ApiCalling />} />
+			<Route path='/extra' element={<ExtraThing />} />
+		
+		</Routes>
+		
+
 	</div>
    	
   )
