@@ -39,6 +39,19 @@ const MyForm = () => {
         setFName(e.target.value);
     }
 
+    const handleClick = (id) => {
+        console.log("handleClick called");
+        console.log(id);
+
+        const copyAllUser = [...allUser];
+
+        copyAllUser.splice(id,1)
+
+        console.log("deleted");
+
+        setUser(copyAllUser) // 
+    }
+
   return (
     <div>
         <form onSubmit={submitHandler}>
@@ -48,7 +61,30 @@ const MyForm = () => {
             
             <button className="my-button">Submit</button>
         </form> 
-        
+        <h2>All users</h2>
+        <table border="1">
+            <thead>
+                <tr><th>Fname</th><th>Lname</th><th>Action</th></tr>
+            </thead>
+            <tbody>
+            {
+                allUser.map((userOne, idx) => (
+                        <tr key={idx}>
+                            <td>{userOne.fname}</td>
+                            <td>{userOne.lastname}</td>
+                            <td><button onClick={()=>{
+                                handleClick(idx)
+                            }}>Remove</button>
+                            </td>
+                        </tr>
+                    )
+                )
+            }
+            </tbody>
+            <tfoot>
+                <tr><th>Fname</th><th>Lname</th><th>Action</th></tr>
+            </tfoot>
+        </table>
     </div>
 
   )
