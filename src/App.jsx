@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './components/card'
 import Mybutton from './components/mybutton'
+import MyForm from './components/MyForm'
 
 
 const App = () => {
@@ -12,8 +13,10 @@ const App = () => {
 					];
   return (
 	<div>
-		<Card userDetails={userData}/>
-		<Mybutton />
+		{/* <Card userDetails={userData}/>
+		<Mybutton /> */}
+		<MyForm />
+
 	</div>
    	
   )

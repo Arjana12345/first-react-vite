@@ -22,7 +22,7 @@ const mybutton = (props) => {
     const [numArr, setAddNum] = useState([10,20,30]);
 
     const addNum = () => {
-        const newNum = [...numArr] // newNum is a copy of numArr
+        const newNum = [...numArr] // newNum is a copy of numArr - destructure
         newNum.push(40)
 
         setAddNum(newNum)
