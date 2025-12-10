@@ -3,6 +3,7 @@ import Card from './components/card'
 import Mybutton from './components/mybutton'
 import MyForm from './components/MyForm'
 import Storage from './components/Storage'
+import ApiCalling from './components/ApiCalling'
 
 
 const App = () => {
@@ -16,9 +17,9 @@ const App = () => {
 	<div>
 		{/* <Card userDetails={userData}/>
 		<Mybutton />
-		<MyForm /> */}
-		<Storage />
-
+		<MyForm />
+		<Storage /> */}
+		<ApiCalling />
 	</div>
    	
   )
