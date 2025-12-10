@@ -1,15 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
 
 
 const MyForm = () => {
 
-    const [fname, setFName] = useState('')
-    const [style, setStyle] = useState('green')
+    const [fname, setFName] = useState('') // hook
+    
+    // Create a ref to access the input element directly
+    const lname = useRef(null); // hook
+    
 
     const submitHandler = (e) => {
         e.preventDefault()
         console.log("Form submited");
+        console.log(fname);
+        console.log(lname.current.value);
+
+        // now do empty the form
+        setFName('')
+        lname.current.value = ''
+
     }
 
     const handleChange = (e) => {
@@ -21,8 +31,8 @@ const MyForm = () => {
     <div>
         <form onSubmit={submitHandler}>
             <h4>{fname}</h4>
-            <input type="text"  placeholder = "Enter first name" onChange={handleChange}/> <br/>
-            <input type="text"  name="lname" placeholder = "Enter last name"/><br/>
+            <input type="text" value={fname} placeholder = "Enter first name" onChange={handleChange}/> <br/>
+            <input type="text" ref={lname} placeholder = "Enter last name"/><br/>
             
             <button className="my-button">Submit</button>
         </form> 
