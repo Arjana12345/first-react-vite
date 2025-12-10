@@ -9,12 +9,24 @@ const MyForm = () => {
     // Create a ref to access the input element directly
     const lname = useRef(null); // hook
     
+    const [allUser, setUser] = useState([])
+
 
     const submitHandler = (e) => {
         e.preventDefault()
         console.log("Form submited");
         console.log(fname);
         console.log(lname.current.value);
+        
+        let lastname = lname.current.value;
+        
+        // add user into array
+        const copyAllUser = [...allUser];
+
+        copyAllUser.push({fname,lastname})
+        setUser(copyAllUser)
+        
+        console.log(allUser);
 
         // now do empty the form
         setFName('')
@@ -36,6 +48,7 @@ const MyForm = () => {
             
             <button className="my-button">Submit</button>
         </form> 
+        
     </div>
 
   )
