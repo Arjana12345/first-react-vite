@@ -3,6 +3,7 @@ import axios from 'axios';
 
 const ApiCalling = () => {
 
+	
     const getData = () => {
     	const response = fetch('https://jsonplaceholder.typicode.com/todos/1')
 						.then(response => response.json())
@@ -11,8 +12,16 @@ const ApiCalling = () => {
     }
 
 	const getAxiosData = async () => {
-		const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-		console.log(response.data);
+		try	{
+			const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
+			console.log(response.data);
+		}catch (err) {
+			console.log(err);
+		}finally {
+			// this is called when we get data 
+			// here we handle loader
+			console.log("Final block executed");
+		}
 	}
 
   return (
