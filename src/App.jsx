@@ -8,6 +8,7 @@ import Storage from './components/Storage'
 import ApiCalling from './components/ApiCalling'
 import ExtraThing from './components/ExtraThing'
 import { Mycart } from './components/Mycart'
+import { AddItem } from './components/AddItem'
 
 const App = () => {
 	const user = "Arjana"
@@ -27,6 +28,7 @@ const App = () => {
 				<Route path='/apicalling' element={<ApiCalling />} />
 				<Route path='/extra' element={<ExtraThing />} />
 				<Route path='/cart' element={<Mycart />} />
+				<Route path='/item' element={<AddItem />} />
 			</Routes>
 	</div>
    	

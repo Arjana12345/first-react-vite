@@ -5,13 +5,14 @@ const Home = () => {
   return (
     <div className="topnav">
         {/* these are ancher tag */}
-        <Link to="/userDetails" className="nav">UserDetails</Link>
-        <Link to="/button" className="nav">Button</Link>
-        <Link to="/form" className="nav">Form</Link>
-        <Link to="/localstorage" className="nav">Local Storage</Link>
-        <Link to="/apicalling" className="nav">API</Link>
-        <Link to="/extra" className="nav">Extra</Link>
-        <Link to="/cart" className="nav">MyCart</Link>
+        <Link to="/userDetails">UserDetails</Link>
+        <Link to="/button">Button</Link>
+        <Link to="/form">Form</Link>
+        <Link to="/localstorage">Local Storage</Link>
+        <Link to="/apicalling">API</Link>
+        <Link to="/extra">Extra</Link>
+        <Link to="/cart">MyCart</Link>
+        <Link to="/item">AddItem</Link>
 
     </div>
   )
