@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div>
+    <div className="topnav">
         {/* these are ancher tag */}
         <Link to="/userDetails" className="nav">UserDetails</Link>
         <Link to="/button" className="nav">Button</Link>
@@ -11,6 +11,7 @@ const Home = () => {
         <Link to="/localstorage" className="nav">Local Storage</Link>
         <Link to="/apicalling" className="nav">API</Link>
         <Link to="/extra" className="nav">Extra</Link>
+        <Link to="/cart" className="nav">MyCart</Link>
 
     </div>
   )

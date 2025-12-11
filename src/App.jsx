@@ -7,7 +7,7 @@ import MyForm from './components/MyForm'
 import Storage from './components/Storage'
 import ApiCalling from './components/ApiCalling'
 import ExtraThing from './components/ExtraThing'
-
+import { Mycart } from './components/Mycart'
 
 const App = () => {
 	const user = "Arjana"
@@ -17,7 +17,7 @@ const App = () => {
 						{"id": "2", "user":"Kartik","designation":"Front end developer"}
 					];
   return (
-	<div style={{ position: 'relative', width: '100%', height: '100%', border: '0px' }} >
+	<div>
 		<Home />		
 		<Routes>
 				<Route path= '/userDetails' element={<Card userDetails={userData} />}/>
@@ -26,6 +26,7 @@ const App = () => {
 				<Route path='/localstorage' element={<Storage />} />
 				<Route path='/apicalling' element={<ApiCalling />} />
 				<Route path='/extra' element={<ExtraThing />} />
+				<Route path='/cart' element={<Mycart />} />
 			</Routes>
 	</div>
    	
