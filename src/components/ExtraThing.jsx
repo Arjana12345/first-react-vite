@@ -22,7 +22,8 @@ const ExtraThing = () => {
 	
 
 	return (
-		<div>
+		<div className="component">
+			<h1>Learn USe Effect</h1>
 			<button onClick={incrementA}>Increment A {a}</button>
 			<button onClick={incrementB}>Increment B {b}</button>
 		</div>

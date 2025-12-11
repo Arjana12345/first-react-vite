@@ -25,7 +25,8 @@ const ApiCalling = () => {
 	}
 
   return (
-    <div>
+    <div className="component">
+		<h1>API by Axios</h1>
       	<button onClick={getData}>Get Data by fetch API</button><br/>
 		<button onClick={getAxiosData}>Get Data by axios API</button>
     </div>

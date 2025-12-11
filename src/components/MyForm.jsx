@@ -53,7 +53,8 @@ const MyForm = () => {
     }
 
   return (
-    <div>
+    <div className="component">
+        <h1>Form Display</h1>
         <form onSubmit={submitHandler}>
             <h4>{fname}</h4>
             <input type="text" value={fname} placeholder = "Enter first name" onChange={handleChange}/> <br/>

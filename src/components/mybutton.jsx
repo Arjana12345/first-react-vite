@@ -30,7 +30,7 @@ const mybutton = (props) => {
     }
 
   return (
-    <div className="mainCom">
+    <div className="component">
         <h1>My button Intro with hooks</h1>
         <button className="my-button" onClick={changeValue}>Click and change value {num}</button>
         

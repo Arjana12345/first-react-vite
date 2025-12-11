@@ -26,7 +26,8 @@ const Storage = () => {
     }
 
     return (
-        <div>
+        <div className="component">
+            <h1>Local Storage</h1>
             <button onClick={handleClick}>Login</button>
             <button onClick={handleLogout}>Logout</button>
         </div>

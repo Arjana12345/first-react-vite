@@ -11,7 +11,7 @@ const card = (props) => {
     }
 
   return (
-    <div className="mainCom">
+    <div className="component">
         {
             userDetails.map((userOne, idx) => (
                 <div className="card" key={idx}>
