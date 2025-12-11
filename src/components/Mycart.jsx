@@ -1,9 +1,15 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeItem } from '../redux/slice'
+
 
 export const Mycart = () => {
 	const selector = useSelector((state)=>state.cart.value)
 	console.log(selector);
+	
+	const dispatch = useDispatch();
+
+
   return (
     <div className="cart-container">
         <h1>Your Cart {selector} </h1>
@@ -14,7 +20,7 @@ export const Mycart = () => {
                 <div className="item-price">$50.00</div>
                 <div className="item-quantity">Quantity: 1</div>
             </div>
-            <button className="remove-item">Remove</button>
+            <button onClick={() => dispatch(removeItem())} className="remove-item">Remove</button>
         </div>
     </div>
   )

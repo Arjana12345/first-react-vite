@@ -17,7 +17,7 @@ const dispatch = useDispatch();
                 <div className="item-title">Product Name 1</div>
                 <div className="item-price">$50.00</div>
                 </div>
-            <button onClick={()=>dispatch(addItem())} className="add-item">Add</button>
+            <button onClick={()=>dispatch(addItem())} className="add-item">Add to Cart</button>
         </div>
     </div>
   )
