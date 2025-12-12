@@ -27,7 +27,7 @@ const dispatch = useDispatch();
 							<div className="item-title">{data.title}</div>
 							<div className="item-price">{data.price}</div>
 						</div>
-						<button onClick={()=>dispatch(addItem())} className="add-item">Add to Cart</button>
+						<button onClick={()=>dispatch(addItem(data))} className="add-item">Add to Cart</button>
 					</div>
 				))
 			): (
